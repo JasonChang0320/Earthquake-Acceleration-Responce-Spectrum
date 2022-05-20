@@ -1,0 +1,1 @@
+# Earthquake-Acceleration-Responce-Spectrum
