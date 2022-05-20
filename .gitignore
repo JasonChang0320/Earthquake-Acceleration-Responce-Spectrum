@@ -1,0 +1,11 @@
+
+#ignore video
+*.mp4
+
+#ignore report
+*.pdf
+*.pptx
+
+#ignore data and result
+/event/
+/result/
