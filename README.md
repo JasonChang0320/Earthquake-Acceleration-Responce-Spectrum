@@ -6,7 +6,7 @@ Using **single degree of freedom system** to analyze the influence of strong ear
 
 **pseudo_spectrum.py** is the main code, including all preprocess and caculation
 
-**HWA019 Acceleration Responce Spectrum.png** one of examples which is 2018 0206 Hualian earthquake record from station HWA019. The image show the three component PSA
+**HWA019 Acceleration Responce Spectrum.png** one of examples which is 2018 0206 Hualien earthquake record from station HWA019. The image show the three component PSA
 
 ## High-pass and low-pass filter
 
@@ -60,6 +60,6 @@ def Sd_calculate(w,damp_ratio,eq_data,component,filtered=False):
 ```
   
 
-## Example for 2018 0206 Hualian earthquake, station: HWA019
+## Example for 2018 02/06 Hualien earthquake, station: HWA019
 
 ![image](https://github.com/JasonChang0320/Earthquake-Acceleration-Responce-Spectrum/blob/main/HWA019%20Acceleration%20Responce%20Spectrum.png)
