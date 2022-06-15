@@ -60,3 +60,7 @@ def Sd_calculate(w,damp_ratio,eq_data,component,filtered=False):
 ## Example for 2018 02/06 Hualien earthquake, station: HWA019
 
 ![image](https://github.com/JasonChang0320/Earthquake-Acceleration-Responce-Spectrum/blob/main/HWA019%20Acceleration%20Responce%20Spectrum.png)
+
+## Contact
+
+Any problem or discusssion please contact: jason032089@gmail.com
