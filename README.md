@@ -13,3 +13,5 @@ Using **single degree of freedom system** to analyze the influence of strong ear
 ## PSD, PSV, PSA caculation
 
 ## Example for 2018 0206 Hualian earthquake, station: HWA019
+
+[!image](https://github.com/JasonChang0320/Earthquake-Acceleration-Responce-Spectrum/blob/main/HWA019%20Acceleration%20Responce%20Spectrum.png)
