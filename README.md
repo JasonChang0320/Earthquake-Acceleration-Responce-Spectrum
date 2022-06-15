@@ -33,9 +33,9 @@ eq_data[f"{component}_filtered"] = ss.filtfilt(b, a, eq_data[f"{component}_filte
 ```
 
 ## PSD, PSV, PSA caculation
-Using the function below to caculate PSD and follow these these formula to calculation PSV and PSA.
+Using the function below to caculate PSD and follow these formula to calculation PSV and PSA.
 
-In here damping ratio is 0.05, $\omega is natural frequency
+In here damping ratio is 0.05, $\omega \ is natural frequency
 
 ![image](https://github.com/JasonChang0320/Earthquake-Acceleration-Responce-Spectrum/blob/main/formula%20image.png)
 
