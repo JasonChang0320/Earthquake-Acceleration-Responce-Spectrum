@@ -10,7 +10,11 @@ Using **single degree of freedom system** to analyze the influence of strong ear
 
 ## High-pass and low-pass filter
 
-Using Tkinter to build a GUI to determine the high pass filter of cut-off frequency. As for low-pass frequency we set is 10Hz, the example code is below:
+Using Scipy the order of 4 butterworth filter
+
+Using Tkinter to build a GUI to determine the high pass filter of cut-off frequency. As for low-pass frequency we set is 10Hz.
+
+The example code is below:
 
 ```python
 import scipy.signal as ss
@@ -33,9 +37,10 @@ eq_data[f"{component}_filtered"] = ss.filtfilt(b, a, eq_data[f"{component}_filte
 ```
 
 ## PSD, PSV, PSA caculation
+
 Using the function below to caculate PSD and follow these formula to calculation PSV and PSA.
 
-In here damping ratio is 0.05, $\omega \ is natural frequency
+In here damping ratio is 0.05, $\omega$ is natural frequency
 
 ![image](https://github.com/JasonChang0320/Earthquake-Acceleration-Responce-Spectrum/blob/main/formula%20image.png)
 
