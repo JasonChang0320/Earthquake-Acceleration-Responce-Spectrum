@@ -12,8 +12,23 @@ Using **single degree of freedom system** to analyze the influence of strong ear
 
 Using Tkinter to build a GUI to determine the high pass filter of cut-off frequency. As for low-pass frequency we set is 10Hz, the parameter we set is below:
 
-```bash
-pip install -r requirements.txt
+```python
+import scipy.signal as ss
+
+#==========進行低通濾波=========
+sample_rate=200 #取樣頻率 (Hz)
+order=4 #4階
+lb_cutoff_freq=10  #(Hz)截至頻率
+Wn=2*lb_cutoff_freq/sample_rate #Wn 是正規化的截止頻率，介於 0 和 1 之間
+
+b, a = ss.butter(order, Wn, 'lowpass')  #scipy 的 butterworth 低通濾波器 
+eq_data[f"{component}_filtered"] = ss.filtfilt(b, a, eq_data[component])
+
+#===========進行高通濾波============
+hb_cutoff_freq=filter_value[f"{component} bandpass_boundary (Hz)"]  #(Hz)截至頻率
+Wn=2*hb_cutoff_freq/sample_rate #Wn 是正規化的截止頻率，介於 0 和 1 之間
+b, a = ss.butter(order, Wn, 'highpass')  #scipy 的 butterworth 高通濾波器 
+eq_data[f"{component}_filtered"] = ss.filtfilt(b, a, eq_data[f"{component}_filtered"])
 ```
 
 ## PSD, PSV, PSA caculation
