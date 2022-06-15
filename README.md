@@ -10,6 +10,12 @@ Using **single degree of freedom system** to analyze the influence of strong ear
 
 ## High-pass and low-pass filter
 
+Using Tkinter to build a GUI to determine the high pass filter of cut-off frequency. As for low-pass frequency we set is 10Hz, the parameter we set is below:
+
+```bash
+pip install -r requirements.txt
+```
+
 ## PSD, PSV, PSA caculation
 
 ## Example for 2018 0206 Hualian earthquake, station: HWA019
