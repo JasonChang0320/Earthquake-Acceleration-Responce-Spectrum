@@ -35,11 +35,12 @@ eq_data[f"{component}_filtered"] = ss.filtfilt(b, a, eq_data[f"{component}_filte
 ## PSD, PSV, PSA caculation
 Using the function below to caculate PSD and follow these these formula to calculation PSV and PSA.
 
-In here damping ratio is 0.05, $\omega \Omega$ is natural frequency
+In here damping ratio is 0.05, $\omega is natural frequency
 
 ![image](https://github.com/JasonChang0320/Earthquake-Acceleration-Responce-Spectrum/blob/main/formula%20image.png)
 
-'''python
+
+```python
 def Sd_calculate(w,damp_ratio,eq_data,component,filtered=False):
     if filtered==True:
         component+="_filtered"
@@ -51,7 +52,7 @@ def Sd_calculate(w,damp_ratio,eq_data,component,filtered=False):
         t1, yout, xout = ss.lsim(system,eq_data[f"{component}"],eq_data["Time"])
         Sd[i]=max(abs(yout))
     return Sd
-'''
+```
   
 
 ## Example for 2018 0206 Hualian earthquake, station: HWA019
